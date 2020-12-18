@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+/* Header/logo tiêu đề */
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 120px;
+}
+header .logo{
+    position: absolute;
+    left: 46%;
+}
+
+
+/* Tăng kích thước font chữ cho header */
+
+header h1 {
+    color: white;
+    font-size: 40px;
+}
+
+header h3{
+    color: white;
+}
+header .banner img{
+    height: 120px;
+}
+
+section {
+    padding: 20px;
+}
+.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0 !important;
+    z-index: 9999;
+    box-shadow: 1px 1px 5px #ccc;
+}
+nav .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    color: black;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    border-bottom: 2px solid black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #666;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.hideable-section .title h2{
+    font-size: 25px;
+    color: black !important;
+}
+.product-list{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+.item-product{
+    position: relative;
+    width: 25%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.hideable-section {
+    display: none;
+}
+
+.hideable-section:first-of-type {
+    display: block;
+}
+.section{
+    margin-top: 50px;
+}
+.box-pro-detail{
+    text-align: center;
+}
+.box-pro-detail .pro-name{
+    line-height: 20px;
+    font-weight: 100;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 15px;
+}
+p.pro-price {
+    font-weight: 700;
+}
+.tabTitle{
+    list-style-type: none;
+}
+.germe-design .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sale-email {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 60px 0;
+    background-color: #fff;
+    border-top: 2px solid lightgrey;
+}
+.sale-email .mono-tag{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.main-footer {
+    background-color: WhiteSmoke;
+}
+
+.sale-email h3 {
+    width: 46%;
+    line-height: 34px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sale-email input {
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.sale-email input::placeholder {
+    color: rgba(0,0,0,.5);
+}
+
+.input-email {
+    position: relative;
+    width: 30%;
+    margin-top: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.sale-email i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer-menu {
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.footer-menu li a {
+    font-size: 13px;
+    color: black;
+}
+
+.main-footer .logo-bottom{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.main-footer .bottom{
+    margin-bottom: 40px;
+}
+.main-footer .footer-menu li a:hover{
+    border: none;
+}
+
+.main-footer .multi-media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.main-footer .multi-media button i {
+    font-size: 20px;
+}
+
+.hideable-section .shirt{
+    margin-top: 50px;
+}
+.hideable-section .shirt .title h2{
+    font-size: 25px;
+}
+.hideable-section .section .product-list .item-product .product-action{
+    transform: translateY(0px);
+    transition: all .6s ease;
+    position: absolute;
+    width: calc(100% - 60px);
+}
+.hideable-section .section .product-list .item-product .product-action button{
+    display: none;
+}
+.hideable-section .section .product-list .item-product:hover>.product-action{
+    transform: translateY(-100px);
+    display: flex;
+    justify-content: center;
+}
+.hideable-section .section .product-list .item-product:hover>.product-action button{
+    display: block;
+}
+
+.product-action button {
+    padding: 13px 0;
+    text-align: center;
+    width: 43%;
+    border-radius: 0;
+    border: none;
+    background: white;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*about*/
+#about .first_about{
+    height: 300px;
+    margin-top: 50px;
+}
+.first_about .about-left img{
+    height: 200px;
+}
+#about .about-left{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#about .about-right{
+    width: 50%;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about-right h2{
+    font-size: 30px;
+}
+.about-right span{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    display: block;
+}
+
+/*service*/
+#services .info_g pre{
+    font-size: 10pt;
+    font-family: Arial;
+    color: rgb(0,0,0);
+    background-color: transparent;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+}
+#services .content{
+    margin-top: 50px;
+}
+.content .box .box_ct h1{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted grey;
+}
